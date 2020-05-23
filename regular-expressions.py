@@ -74,3 +74,5 @@ assert nonterminals(("<1>", {'option': 'value'})) == ["<1>"]
 
 print(simple_grammar_fuzzer(grammar, START_SYMBOL, max_nonterminals=10, max_expansion_trials=100, log=True))
 
+for i in range(10):
+    print(simple_grammar_fuzzer(grammar=grammar, max_nonterminals=5))
